@@ -92,3 +92,6 @@ Route::post('tampil-kategori', [KategoriController::class, 'store'])->name('kate
 Route::get('tambah-kategori', [KategoriController::class, 'create'])->name('kategori.create');
 Route::put('/kategori/update/{id}', [KategoriController::class, 'update'])->name('kategori.update');
 Route::delete('/kategori/{id}', [KategoriController::class, 'destroy'])->name('kategori.destroy');
+Route::get('/produk/export/excel', [ProdukController::class, 'excel'])->name('produk.excel');
+Route::get('/produk/export/pdf', [ProdukController::class, 'pdf'])->name('produk.pdf');
+Route::get('/produk/chart', [ProdukController::class, 'chart'])->name('produk.chart');

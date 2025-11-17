@@ -8,6 +8,9 @@
     + Tambah Data
     </button>
 
+    <a href="{{route('produk.excel')}}" class="btn btn-primary">Excel</a>
+    <a href="{{route('produk.pdf')}}" class="btn btn-secondary pull-right">PDF</a>
+    <a href="{{route('produk.chart')}}" class="btn btn-secondary pull-right">Chart</a>
 
     <table class="table table-bordered table striped" id="tabel-produk">
         <thead>
